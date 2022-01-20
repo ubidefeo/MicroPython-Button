@@ -76,7 +76,7 @@ def button_action(pin, event):
     if event == Button.RELEASED:
         print('Button released')
 
-my_button = Button(17, __rest_state = True__, callback = button_action)
+my_button = Button(17, rest_state = True, callback = button_action)
 
 while(True):
     my_button.update()
