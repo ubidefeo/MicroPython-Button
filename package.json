@@ -1,0 +1,14 @@
+{
+  "urls": [
+    [
+      "mp_button/__init__.py",
+      "github:ubidefeo/MicroPython-Button/mp-button/__init__.py"
+    ],
+    [
+      "mp_button/Button.py",
+      "github:ubidefeo/MicroPython-Button/mp-button/Button.py"
+    ]
+  ],
+  "deps": [],
+  "version": "0.1.0"
+}
