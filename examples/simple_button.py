@@ -1,4 +1,4 @@
-from Button import Button
+from mp_button import Button
 
 
 # we create a counter to increment as we press
@@ -31,6 +31,9 @@ def button_change(button, event):
 # - the state at rest (value() is False by default)
 # - a callback to invoke when the button changes state (see above)
 button_one = Button(17, False, button_change)
+
+# a named parameter approach is also possible
+# button_one = Button(17, rest_state = False, callback = button_change)
 
 # during our loop we keep checking the button(s)
 while(True):
