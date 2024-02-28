@@ -5,7 +5,7 @@
       "github:ubidefeo/MicroPython-Button/mp_button/__init__.py"
     ],
     [
-      "mp_button/Button.py",
+      "mp_button/mp_button.py",
       "github:ubidefeo/MicroPython-Button/mp_button/mp_button.py"
     ]
   ],
