@@ -1,13 +1,9 @@
 {
   "urls": [
-    [
-      "mp_button/__init__.py",
-      "github:ubidefeo/MicroPython-Button/mp_button/__init__.py"
-    ],
-    [
-      "mp_button/mp_button.py",
-      "github:ubidefeo/MicroPython-Button/mp_button/mp_button.py"
-    ]
+    ["mp_button/__init__.py", "github:ubidefeo/MicroPython-Button/mp_button/__init__.py"],
+    ["mp_button/mp_button.py", "github:ubidefeo/MicroPython-Button/mp_button/mp_button.py"],
+    ["mp_button/examples/simple_button.py", "github:ubidefeo/MicroPython-Button/mp_button/examples/simple_button.py"],
+    ["mp_button/examples/dual_debounced_button.py", "github:ubidefeo/MicroPython-Button/mp_button/examples/dual_debounced_button.py"]
   ],
   "deps": [],
   "version": "0.2.0"
