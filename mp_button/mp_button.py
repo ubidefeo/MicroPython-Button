@@ -45,9 +45,11 @@ class Button(object):
   def check_debounce_state(self):
     if self.current_debounced_state != self.previous_debounced_state:
       if self.current_debounced_state != self.rest_state:
+        self.active = True
         if self.callback != None:
           self.callback(self.pin_number, Button.PRESSED)
       else:
+        self.active = False
         if self.callback != None:
           self.callback(self.pin_number, Button.RELEASED)
     self.previous_debounced_state = self.current_debounced_state
