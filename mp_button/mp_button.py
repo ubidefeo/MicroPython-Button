@@ -26,7 +26,11 @@ class Button(object):
       self.rest_state = True
     else:
       self.internal_pull = None
-    self.pin = Pin(pin, mode = Pin.IN, pull = self.internal_pull)
+    if isinstance(pin, int):
+      self.pin = Pin(pin, mode = Pin.IN, pull = self.internal_pull)
+    else:
+      self.pin = pin
+      
     self.callback = callback
     self.active = False
   
