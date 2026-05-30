@@ -1,6 +1,6 @@
 # MicroPython-Button
 
-An easy to use [MicroPython](https://micropython.org) library to handle Buttons and other devices with digital (LOW/HIGH) output.
+An easy to use [MicroPython](https://micropython.org) library to handle Buttons and other devices with digital (LOW/HIGH) output. Be them microcontroller GPIOs or pins exposed via IO Expanders (see "Virtual" pins below).
 
 Instantiate an object of this Class to easily handle its behaviour via `PRESSED` and `RELEASED` events.
 
