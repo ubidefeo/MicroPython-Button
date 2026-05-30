@@ -149,3 +149,13 @@ while(True):
     my_button.update()
   
 ```
+
+## "Virtual" pins (e.g.: attached to IO Expanders)
+
+If implementing GPIO expanders, one might use `i2c` or other communication bus peripherals that handle the Pin behaviour.
+In this case a separate hardware driver is used, and most libraries which expect an `Int` to turn into a `machine.Pin` will fail.
+It is a bad habit to try and make the instance create a `machine.Pin` based on a number (GPIO) in general, but most seem to like that way.
+In MicroPython-Button, if the user hands in a number it will return a `machine.Pin`, otherwise it will return the same object.
+
+The Object needs to comply with Pin.
+For an example take a look at [Nesso N1's MicroPython support module](https://github.com/ubidefeo/nesso-n1-mpy/blob/main/nesso_n1/nesso_pin.py). NessoPin is able to either return a `machine.Pin` object or an instance of `NessoN1_ExpanderPin`, which implements all methods of `machine.Pin` including `__call__(self, val=None)`.
